@@ -7,6 +7,7 @@ Phone varchar(13)
 );
 CREATE TABLE Company(
 CompanyID int AUTO_INCREMENT primary key NOT NULL,
+CompanyName varchar(50),
 Industry varchar(50) NOT NULL,
 Headquarters varchar(50),
 FoundedYear year
@@ -46,3 +47,5 @@ DROP TABLE Company;
 DROP TABLE Stock;
 DROP TABLE BrokerageAccount;
 DROP TABLE TradeTransaction;
+
+SELECT * FROM Investor;
